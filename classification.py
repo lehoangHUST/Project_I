@@ -17,7 +17,7 @@ path_image_normal = "C:/Users/Administrator/Documents/Project_I/normal/"
 path_image_dark = "C:/Users/Administrator/Documents/Project_I/dark/"
 
 # Convert array list to array numpy.
-data = np.asarray(process_data.open_file('max'))
+data = np.asarray(process_data.open_file('average'))
 
 # Train is 70 percent size data and test is 30 percent size data.
 X_train, X_test, Y_train, Y_test = train_test_split(data[:, :3], data[:, 3], test_size=0.3, random_state=1)
@@ -148,6 +148,7 @@ class Kmeans:
 
     def draw(self):
         pass
+
 
 class SoftmaxRegression:
     

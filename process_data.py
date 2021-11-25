@@ -20,14 +20,17 @@ current_file = os.getcwd() + '\\' + 'training_dataset\\'
 # Clustering Eight Colors to Recognition
 colors = ['black', 'white', 'red', 'green']
 
+
 # Convert one label to matrix 1D: truth label is 1 and last is 0.
 def encoding(Y):
     encode = np.array([[1 if colors[j] == Y[i] else 0 for j in range(len(colors))] for i in range(len(Y))])
     return encode
 
+
 def decoding(Y):
     decode = np.where(Y == 1)
     return decode
+
 
 def softmax(Z):
     """
@@ -40,8 +43,9 @@ def softmax(Z):
     A = e_Z / sum
     return A
 
+
 # Open file
-def open_file(string='max'):
+def open_file(string='average'):
     """
         # Open file and save 4 features in list.
 

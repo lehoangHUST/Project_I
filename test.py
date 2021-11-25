@@ -11,7 +11,7 @@ author = "Author:  LE HUY HOANG"
 class_author = 'Class:  Class 01 - ET01-K63'
 contact_email = 'Email:  lehuyhoang30122000@gmail.com'
 instructor = 'Instructor:  NGUYEN HUY HOANG'
-path_file = ""
+path_file = "D:/Machine_Learning/Project_I/data_average.csv"
 predict_color = ""
 
 
